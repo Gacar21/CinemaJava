@@ -4,15 +4,15 @@ package Cine;
 public class Espectador {
 
     String Nom[][] = {
-            {"gabriel", "jesus","carrillo","rico", "gabriel", "jesus","carrillo","rico", "batman"},
-            {"lesly", "alexandra", "villacob", "gelvez", "gabriel", "jesus","carrillo","rico","batman" },
-            {"Jose", "aroldo", "ortega", "ortiz", "gabriel", "jesus","carrillo","rico", "batman"},
-            {"Jose", "aroldo", "ortega", "ortiz", "gabriel", "jesus","carrillo","rico", "batman"},
-            {"Jose", "aroldo", "ortega", "ortiz", "gabriel", "jesus","carrillo","rico", "batman"},
-            {"Jose", "aroldo", "ortega", "ortiz", "gabriel", "jesus","carrillo","rico", "batman"},
-            {"Jose", "aroldo", "ortega", "ortiz", "gabriel", "jesus","carrillo","rico", "batman"},
-            {"Jose", "aroldo", "ortega", "ortiz", "gabriel", "jesus","carrillo","rico", "batman"},
-            {"Jose", "aroldo", "ortega", "ortiz", "gabriel", "jesus","carrillo","rico", "batman"}
+            {"Gabriel", "Jesus","Carrillo","Rico", "Alejandro", "Galvis","Juan","Sebastian", "Quintero"},
+            {"Lesly", "Alexandra", "Villacob", "Gelvez", "EVA", "Sandry","Pimienta","Salas","Batman" },
+            {"Sanchez", "Aroldo", "Ortega", "Ortiz", "Esteban", "Urrutia","Duarte","Laura", "Leanis"},
+            {"Sofia", "Lea", "Maria", "Lara", "Jessica", "Luz","Soler","Solecito", "Robin"},
+            {"Luffy", "Zoro", "Nami", "Chopper", "Brook", "Frankly","Sanji","Jimbe", "Ussopp"},
+            {"Valentina", "Jonny", "Jack", "David", "Andres", "Jorge","Armando","Karoll", "Julieth"},
+            {"Elvia", "Alfredo", "Leal", "Mendoza", "Luis", "Heisenberg","Walter","Lois", "Peter"},
+            {"Homero", "Marge", "Lisa", "Bart", "Mou", "Luigi","Ash Ketchut","Goku", "Vegueta"},
+            {"Naruto", "Sasuke", "Jim", "Obama", "Sailor", "Zena","Hiruma","Meibis", "Dracula"}
     } ;
 
     String puestos[][] = {
@@ -29,27 +29,27 @@ public class Espectador {
     } ;
 
     int edades[][] = {
-            {10, 12, 16 , 18, 10, 12, 16 , 18, 9 },
-            {20, 22, 12 , 17, 10, 12, 16 , 18, 9},
-            {20, 22, 12 , 17, 10, 12, 16 , 18, 9},
-            {20, 22, 12 , 17, 10, 12, 16 , 18, 9},
-            {20, 22, 12 , 17, 10, 12, 16 , 18, 9},
-            {20, 22, 12 , 17, 10, 12, 16 , 18, 9},
-            {20, 22, 12 , 17, 10, 12, 16 , 18, 9},
-            {20, 22, 12 , 17, 10, 12, 16 , 18, 9},
-            {30, 32, 10, 33,  10, 12, 16 , 18, 9 }
+            {20, 22, 26 , 18, 20, 22, 26 , 18, 19 },
+            {10, 22, 22 , 27, 10, 22, 26 , 18, 19},
+            {20, 22, 22 , 27, 20, 22, 16 , 18, 19},
+            {20, 12, 22 , 27, 20, 22, 26 , 18, 19},
+            {20, 22, 22 , 27, 20, 22, 16 , 18, 19},
+            {20, 22, 22 , 17, 20, 22, 26 , 18, 19},
+            {10, 22, 22 , 27, 20, 22, 26 , 18, 16},
+            {20, 22, 12 , 27, 20, 22, 26 , 18, 15},
+            {30, 32, 20,  33, 20, 22, 26 , 18, 17 }
 
     } ;
     int plata[][] = {
-            {5000, 2000, 10000 , 15555, 5000, 2000, 10000 , 15555, 15200},
-            {5000, 2000, 10000 , 15555, 5000, 2000, 10000 , 15555, 15200},
-            {5000, 2000, 10000 , 15555, 5000, 2000, 10000 , 15555, 15200},
-            {22000, 12000, 15000, 30,  5000, 2000, 10000 , 15555, 15200},
-            {20000, 1500, 3300 , 50000,  5000, 2000, 10000 , 15555, 15200},
-            {20000, 1500, 3300 , 50000,  5000, 2000, 10000 , 15555, 15200},
-            {20000, 1500, 3300 , 50000,  5000, 2000, 10000 , 15555, 15200},
-            {20000, 1500, 3300 , 50000,  5000, 2000, 10000 , 15555, 15200},
-            {22000, 12000, 15000, 30,  5000, 2000, 10000 , 15555, 15200}
+            {15000, 20000, 10000 , 15555, 50000, 20000, 10000 , 1555, 15200},
+            {15000, 2000, 10000 , 15555, 50000, 20000, 10000 , 15555, 15200},
+            {15000, 20000, 10000 , 15555, 50000, 20000, 10000 , 15555, 15200},
+            {22000, 12000, 15000, 3000,  50000, 2000, 10000 , 15555, 15200},
+            {20000, 15000, 33000 , 50000,  50000, 20000, 10000 , 15555, 15200},
+            {2000, 15000, 33000 , 50000,  50000, 20000, 10000 , 15555, 15200},
+            {20000, 15000, 33000 , 50000,  50000, 20000, 10000 , 15555, 15200},
+            {20000, 15000, 33000 , 5000,  50000, 20000, 10000 , 15555, 15200},
+            {22000, 1200, 15000, 30000,  50000, 20000, 1000 , 15555, 15200}
 
     } ;
 
