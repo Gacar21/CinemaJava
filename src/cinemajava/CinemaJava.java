@@ -16,7 +16,6 @@ public class CinemaJava {
 
         boolean continuar = true;
 
-        mainLoop:
         while (continuar) {
             for (int i = 0; i < fila; i++) {
                 for (int j = 0; j < columna; j++) {
@@ -32,11 +31,13 @@ public class CinemaJava {
 
                         if (edadUsuarioActual < pelis.getEdadMin()) {
                             System.out.println("No tienes edad suficiente para ver esta película.");
+                            System.out.println(" ");
                             continue;
                         }
 
                         if (plataUsuarioActual < pelis.getPrecio()) {
                             System.out.println("No tienes dinero suficiente para ver esta película.");
+                            System.out.println(" ");
                             continue;
                         }
 
@@ -51,13 +52,26 @@ public class CinemaJava {
                             switch (opc) {
                                 case 1:
                                     espectador.getPuestos()[i][j] = "0";
+                                    espectador.getPlata()[i][j] -= pelis.getPrecio();
                                     System.out.println("PUESTO ASIGNADO.");
-                                    System.out.println("¿Desea asignar otro puesto, " + nombreUsuarioActual + "?");
-                                    System.out.println("1. SI.");
-                                    System.out.println("2. NO.");
-                                    int seguirAsignando = sc.nextInt();
-                                    if (seguirAsignando != 1) {
+                                    System.out.println("Dinero restante: " + espectador.getPlata()[i][j] + ".");
+                                    if(espectador.getPlata()[i][j] < pelis.getPrecio()){
+                                        System.out.println("No tienes suficiente dinero para asignar otro puesto.");
+                                        System.out.println("3.Salir");
+                                        System.out.println(" ");
+                                        int seguirAsignando = sc.nextInt();
+                                        if (seguirAsignando != 1) {
+                                            asignarOtroPuesto = false;
+                                        }
                                         asignarOtroPuesto = false;
+                                    }else {
+                                        System.out.println("¿Desea asignar otro puesto, " + nombreUsuarioActual + "?");
+                                        System.out.println("1. SI.");
+                                        System.out.println("2. NO.");
+                                        int seguirAsignando = sc.nextInt();
+                                        if (seguirAsignando != 1) {
+                                            asignarOtroPuesto = false;
+                                        }
                                     }
                                     break;
                                 case 2:
