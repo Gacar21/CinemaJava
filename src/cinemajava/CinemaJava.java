@@ -3,6 +3,7 @@ package cinemajava;
 import Cine.Espectador;
 import Cine.Peliculas;
 
+
 import java.util.Scanner;
 
 public class CinemaJava {
@@ -13,6 +14,7 @@ public class CinemaJava {
         Scanner sc = new Scanner(System.in);
         Espectador espectador = new Espectador();
         Peliculas pelis = new Peliculas("Como programar y no morir 2", "Gabriel C", 60, 18,10000);
+
 
         boolean continuar = true;
 
@@ -51,6 +53,7 @@ public class CinemaJava {
                             int opc = sc.nextInt();
                             switch (opc) {
                                 case 1:
+                                    espectador.getPuestos()[i][j] =
                                     espectador.getPuestos()[i][j] = "0";
                                     espectador.getPlata()[i][j] -= pelis.getPrecio();
                                     System.out.println("PUESTO ASIGNADO.");
@@ -61,7 +64,12 @@ public class CinemaJava {
                                         System.out.println(" ");
                                         int seguirAsignando = sc.nextInt();
                                         if (seguirAsignando != 1) {
+                                            System.out.println(" ");
+                                            mostrarInfPeli(pelis);
+                                            mostrarInfAsientos(espectador);
+                                            System.out.println(" ");
                                             asignarOtroPuesto = false;
+
                                         }
                                         asignarOtroPuesto = false;
                                     }else {
@@ -78,8 +86,10 @@ public class CinemaJava {
                                     asignarOtroPuesto = false;
                                     break;
                                 case 3:
+
                                     mostrarInfPeli(pelis);
                                     mostrarInfAsientos(espectador);
+                                    System.out.println(" ");
                                     continuar = false;
                                     return;
                                 default:
@@ -125,13 +135,17 @@ public class CinemaJava {
         System.out.println("/// ESTADO DE LOS ASIENTOS DE LA SALA 1 ///");
         System.out.println("'0' Asiento seleccionado.");
         System.out.println("Diferentes de 0 - Asiento no seleccionados.");
+        System.out.println(" ");
         for (int i = 0; i < espectador.getPuestos().length; i++) {
             for (int j = 0; j < espectador.getPuestos()[i].length; j++) {
+
                 System.out.print(espectador.getPuestos()[i][j] + " ");
+
             }
             System.out.println();
         }
         System.out.println();
+
     }
 
 }
